@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Poppins:wght@200&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; 
+}
+
+body {
+    background-color: #151719;
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.conteiner {
+    position: relative;
+    -webkit-box-reflect: below -20px linear-gradient(transparent, rgb(0,0,0.2));
+    font-size: 60px;
+}
+
+.conteiner span {
+    font-family: "Alfa Slab One", cursive;
+    position: relative;
+    display: inline-block;
+    color: #fff;
+    text-transform: uppercase;
+    animation: wave 1s infinite;
+    animation-delay: calc(.1s *var(--i));
+}
+
+
+@keyframes wave {
+    0%,40%,100% {
+        transform: translateY(0);
+    }
+    20% {
+        transform: translateY(-20px);
+    }
+}
